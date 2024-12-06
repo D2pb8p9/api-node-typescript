@@ -6,11 +6,15 @@ dotenv.config();
 
 const server = express();
 
+interface Teste {
+
+}
+
 server.use(cors());
 server.use(express.json());
 
 server.get('/', (req, res) => {
-    res.send('Ola, DEV!')
+     res.send('Ola, DEV!')
 });
 
 export { server };
